@@ -1,11 +1,161 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Streaming Media Assignment</title>
-</head>
-<body>
-    
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="author" content="Susan Arraez">
+        <meta name="description" content="This station is dedicated to the soothing sounds of smooth jazz. This genre of commercially oriented crossover jazz became dominant in the 1980s and early 1990s.">
+        <title>MuzakMaker</title>
+        <!--??????Question: Am i supposed to make the tittle the first top heading of the whole page like shown on the content???????-->
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <header>
+            <h1>Smooth Jazz</h1>
+            <P>This station is dedicated to the soothing sounds of smooth jazz. This genre of commercially oriented crossover jazz became dominant in the 1980s and early 1990s.</P>
+        </header>
+        <nav>
+            <h2>Main Navigation</h2>
+            <input type="checkbox" id="dropdown"/>
+            <label for="dropdown"><span></span></label>
+            <ul>
+                <li><a href="#home">MuzakMaker</a></li>
+                <div>
+                    <li><a href="#trending">Trending <br />Songs</a></li>
+                    <li><a href="#playlist">Your <br />playlists</a></li>
+                    <li><a href="#curated">Curated <br />Playlists</a></li>
+                    <li><a href="user"><img src= "images-20240311T173615Z-001/images/duke-silver.png" alt ="picture of duke-silver wearing a hat"></a></li>
+                </div>
+            </ul> 
+            
+        </nav>
+        
+        <main>
+<!------------------------------------------- New Section: Trending---------------------------------------------------------->            
+            <section id="trending">
+                <h2>Trending Songs</h2>
+
+                <section id="aloma">
+                    <h3>Aloma</h3>
+                    <p>Artist Cali</p>
+                    <img src= "images-20240311T173615Z-001/images/aloma-cover.png" alt ="picture of dove flying">
+                    <!-- ???????????????????Question: Are we supposed to input dimensions for the images and audio???????????????????? -->
+                    <audio controls>
+                        <source src ="audio-20240311T173639Z-001/audio/aloma.mp3">
+                    </audio>
+                </section>
+                
+                <section id="my_road">
+                    <h3>My Road</h3>
+                    <p>Artist Nesterouk</p>
+                    <img src="images-20240311T173615Z-001/images/my-road-cover.png" alt="picture of long narrow road">
+                    <audio controls>
+                        <source src="audio-20240311T173639Z-001/audio/my-road.mp3">
+                    </audio>
+                </section>
+
+                <section id="papaya">
+                    <h3>Papaya</h3>
+                    <p>Artist Dredstudio</p>
+                    <img src="images-20240311T173615Z-001/images/papaya-cover.png" alt="A sliced papaya with a green background">
+                    <audio controls>
+                        <source src="audio-20240311T173639Z-001/audio/papaya.mp3">
+                    </audio>
+                </section>
+
+                <section id="smoothies">
+                    <h3>Smoothies</h3>
+                    <p>Artist Black Rhomb</p>
+                    <img src="images-20240311T173615Z-001/images/smoothies-cover.png" alt="A pink smoothie on a table with a straw and various different fruit next to the smoothie.">
+                    <audio controls>
+                        <source src="audio-20240311T173639Z-001/audio/smoothies.mp3">
+                    </audio>
+                </section>
+
+                <section>
+                    <h3>Successful Performance</h3>
+                    <p>Artist Ricky Bombino</p>
+                    <img src="images-20240311T173615Z-001/images/successful-performance-cover.png" alt="Bearded guy standing infront of a blue briked wall holding out his fits in front of him in victory">
+                    <audio controls>
+                        <source src="audio-20240311T173639Z-001/audio/successful-performance.mp3">
+                    </audio>
+                </section>
+                <a href= "#">More trending</a>
+            </section>
+<!-------------------------------------------------- New Section: Playlist--------------------------------------------------------------->
+            <section id="playlist">
+                <h2>Your Playlists</h2>
+
+                <section id="best_20">
+                    <img src="images-20240311T173615Z-001/images/best-of-2020-cover.png" alt="numbers 2020 in gold and flashy">
+                    <h3>Best of 2020</h3>
+                    <p>The music that got you through the lock down.</p>
+                </section>
+
+                <section id="pumpkin_spice">
+                    <img src="images-20240311T173615Z-001/images/pumpkin-spice-cover.png" alt="overview of coffee with a leaf design of cream">
+                    <h3>Pumpkin Spice</h3>
+                    <p>Creamy and spicy, just like your favorite autumnal latte.</p>
+                </section>
+
+                <section id="quiet_storm">
+                    <img src="images-20240311T173615Z-001/images/quiet-storm-cover.png" alt="a stormy sky of blue and purple color">
+                    <h3>Quiet Storm</h3>
+                    <p>Slow tempos and relaxed rhythms.</p>
+                </section>
+
+                <section id="smooth_jazz">
+                    <img src="images-20240311T173615Z-001/images/smooth-jazz-cover.png" alt="old man wearing glasses with a gray background behind him">
+                    <h3>Smooth Jazz</h3>
+                    <p>The pioneers of smooth jazz</p>
+                </section>
+
+                <section id="smooth_study">
+                    <img src="images-20240311T173615Z-001/images/smooth-study-cover.png" alt="a person wearing and orange sweater typing on their computer">
+                    <h3>Smooth Study</h3>
+                    <p>Background music to keep you going while you study.</p> 
+                </section>
+
+                <a href="#">All your playlists</a>
+            </section>
+<!-------------------------------------------------- New Section: Curated--------------------------------------------------------------->
+            <section id="curated">
+                <h2>Curated Playlists</h2>
+
+                <section id="boozy_brunch">
+                    <img src="images-20240311T173615Z-001/images/boozy-brunch-cover.png" alt="friends clinking cups together">
+                    <h3>Boozy Brunch</h3>
+                    <p>Light up the afternoon with these energetic hits.</p>
+                </section>
+
+                <section id="dinner_party">
+                    <img src="images-20240311T173615Z-001/images/dinner-party-cover.png" alt="a long brown wooden table with food and candles on top">
+                    <h3>Dinner Party</h3>
+                    <p>Background music to give your party life, but allow your guests to chat.</p> 
+                </section>
+
+                <section id="mellow">
+                    <img src="images-20240311T173615Z-001/images/mellow-cover.png" alt="a picture of two people sitting on a bench next to a big tree with orange leaves at a park">
+                    <h3>Mellow</h3>
+                    <p>Relax after a stressful day with this collection of extra smooth jazz.</p>
+                </section>
+
+                <section id="jazz_chill">
+                    <img src="images-20240311T173615Z-001/images/jazz-chill-cover.png" alt="close up picture of the petals of a rose">
+                    <h3>Jazz and Chill</h3>
+                    <p>Set the mood with these silky sounds.</p>
+                </section>
+
+                <section id="saxophone">
+                    <img src="images-20240311T173615Z-001/images/smooth-saxophone-cover.png" alt="a picture of someone playing the saxophone, but the saxophone is the main focus of the picture">
+                    <h3>Jazz Saxophone</h3>
+                    <p>The greatest collection of your sax favorites.</p>
+                </section>
+                <a href="#">More curated</a>
+            </section>
+        </main>
+        <footer>
+            <small>Copyright 2022 Smooth Jazz</small>
+        </footer>
+
+    </body>
 </html>
