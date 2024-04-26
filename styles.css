@@ -264,20 +264,14 @@ footer{
         height: 101px;
         font-family: var(--fonts);
     }
-    nav div{
-        font-weight: bold;
-        padding-top: 9px;
-        text-transform: uppercase;
-        padding-left: 15px;
-    }
     ul {
         overflow: visible;
         position: absolute;
         top: 0;
-        left: 27px;
+        left: auto;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-        width: 834px;
+        width: 810px;
     }
     label span, input {
         display: none;
@@ -288,6 +282,11 @@ footer{
         font-size: 1.25rem;
         padding: 10px;
     }
+    nav div{
+        font-weight: bold;
+        padding-top: 9px;
+        text-transform: uppercase;
+        padding-left: 15px;
     }
     body{
         width:834px;
@@ -302,9 +301,28 @@ footer{
     #playlist > .scroll, #curated > .scroll{
         display: flex;
         flex-direction: column;
-        width:200px;
+        width:420px;
+        height: 510px;
         overflow: scroll;
         overflow-x: hidden;
         overflow-y: auto;
+    }
+    /* Playlist and Curated section */
+    
+    #playlist section, #curated section{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    #playlist p, #curated p{
+        position: absolute;
+        top: 36px;
+        left: 170px;
+    }
+    main{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    #trending{
+        grid-column: 1/3;
     }
 }
