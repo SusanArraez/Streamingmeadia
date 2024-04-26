@@ -70,18 +70,7 @@ input:checked ~ label:not(.steps) span:before, input:checked ~ label:not(.steps)
     top: 0;
 }
 
-@media screen and (min-width:834px) {
-    ul {
-        overflow: visible;
-        position: absolute;
-        top: 0;
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    }
-    label span, input {
-        display: none;
-    }
-}
+
 /********************* hamburger dropdown code end **********************/
 html{
     background-color:#020659;
@@ -107,6 +96,7 @@ nav ul li a{
     text-decoration: none;
     color: #ffffff
 }
+
 /************************ HEADER***************** */
 header{
     grid-row: 2/3;
@@ -270,10 +260,51 @@ footer{
 }
 /**************** Large Screen Size STYLE************* */
 @media screen and (min-width:834px){
+    nav{
+        height: 101px;
+        font-family: var(--fonts);
+    }
+    nav div{
+        font-weight: bold;
+        padding-top: 9px;
+        text-transform: uppercase;
+        padding-left: 15px;
+    }
+    ul {
+        overflow: visible;
+        position: absolute;
+        top: 0;
+        left: 27px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        width: 834px;
+    }
+    label span, input {
+        display: none;
+    }
+    li{
+        margin: 0 auto;
+        text-align: center;
+        font-size: 1.25rem;
+        padding: 10px;
+    }
+    }
     body{
         width:834px;
     }
     .scroll{
         width: 834px;
+    }
+    
+    .more{
+        float: right;
+    }
+    #playlist > .scroll, #curated > .scroll{
+        display: flex;
+        flex-direction: column;
+        width:200px;
+        overflow: scroll;
+        overflow-x: hidden;
+        overflow-y: auto;
     }
 }
