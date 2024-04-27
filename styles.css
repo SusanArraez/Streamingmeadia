@@ -82,12 +82,31 @@ nav h2{
 }
 nav ul{
     list-style-type: none;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    gap: 10px;
 }
-nav ul li a{
+nav li{
+    margin: 0 auto;
+    text-align: center;
+    font-size: 1rem;
+    padding: 10px;
+}
+nav a{
     text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: var(--fonts);
     color: #ffffff
 }
 
+nav li:hover, nav li:focus-within {
+    background-color: #590242;
+    cursor: pointer;
+}
+nav li:focus-within a {
+    outline: none;
+}
 /************************ HEADER***************** */
 header{
     grid-row: 2/3;
@@ -279,7 +298,7 @@ footer{
         text-transform: uppercase;
         padding-left: 15px;
     }
-    body{
+    body, main{
         width:834px;
     }
     .scroll{
